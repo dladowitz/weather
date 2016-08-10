@@ -1,1 +1,10 @@
 <h1>Forecast <span ng-show="city.length > 0">for {{city}}</span></h1>
+
+<h2>Daily Weather</h2>
+<div class="list-group">
+  <a href="" class="list-group-item" ng-repeat="forecast in forecasts">
+    <h4 class="list-group-item-heading">Day: {{forecast.dt}}</h4>
+    <p class="list-group-item-text">High: {{forecast.temp.max}}</p>
+    <p class="list-group-item-text">Low: {{forecast.temp.min}}</p>
+  </a>
+</div>
