@@ -1,1 +1,5 @@
-<h2>I'm a forecast</h2>
+<a href="" class="list-group-item">
+  <h4 class="list-group-item-heading">Day: {{ forecastObject.dt }}</h4>
+  <p class="list-group-item-text">High: {{forecastObject.temp.max}}</p>
+  <p class="list-group-item-text">Low: {{forecastObject.temp.min}}</p>
+</a>

@@ -2,11 +2,6 @@
 
 <h2>Daily Weather</h2>
 <div class="list-group">
-  <daily-forecast></daily-forecast>
-  <daily-forecast></daily-forecast>
-  <!-- <a href="" class="list-group-item" ng-repeat="forecast in forecasts">
-    <h4 class="list-group-item-heading">Day: {{forecast.dt}}</h4>
-    <p class="list-group-item-text">High: {{forecast.temp.max}}</p>
-    <p class="list-group-item-text">Low: {{forecast.temp.min}}</p>
-  </a> -->
+  <daily-forecast forecast-object="forecast" ng-repeat="forecast in forecasts"></daily-forecast>
+
 </div>
