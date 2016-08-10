@@ -11,3 +11,10 @@ weatherApp.config(function($routeProvider){
       controller: "forecastController"
     })
 });
+
+
+weatherApp.directive("dailyForecast", function() {
+    return {
+        templateUrl : 'directive_templates/daily_forecast.html'
+    };
+});
