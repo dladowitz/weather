@@ -10,13 +10,9 @@ weatherApp.config(function($routeProvider){
       templateUrl: "pages/forecast.html",
       controller: "forecastController"
     })
+
+    .when("/forecast/:city", {
+      templateUrl: "pages/forecast.html",
+      controller: "forecastController"
+    })
 });
-
-weatherApp.controller("homeController", ["$scope", function($scope){
-  $scope.title = "Home"
-}])
-
-
-weatherApp.controller("forecastController", ["$scope", function($scope){
-  $scope.title = "Forecast"
-}])
