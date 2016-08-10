@@ -10,9 +10,8 @@ weatherApp.config(function($routeProvider){
       templateUrl: "pages/forecast.html",
       controller: "forecastController"
     })
-
-    .when("/forecast/:city", {
-      templateUrl: "pages/forecast.html",
-      controller: "forecastController"
-    })
 });
+
+weatherApp.service("cityService", function(){
+  this.city = "Berkeley"
+})
