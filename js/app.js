@@ -11,7 +11,3 @@ weatherApp.config(function($routeProvider){
       controller: "forecastController"
     })
 });
-
-weatherApp.service("cityService", function(){
-  this.city = "Berkeley"
-})
